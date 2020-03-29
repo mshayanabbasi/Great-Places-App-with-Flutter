@@ -10,7 +10,7 @@ class PlaceListScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.of(context).pushNamed(AddPlaceScreen.routeName);
+              Navigator.of(context).pushNamed(AddPlaceScreen.routeName);        
             },
           ),
         ],
