@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:placelist_app/widgets/location_input.dart';
+
 import '../providers/great_places.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -48,11 +50,15 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
                     height: 10,
                   ),
                   ImageInput(_selectImage),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  LocationInput(),    
                 ],
               ),
             ),
           ),
-          RaisedButton.icon(                    
+          RaisedButton.icon(
             onPressed: _savePlaces,
             icon: Icon(Icons.add),
             label: Text('Add Place'),
